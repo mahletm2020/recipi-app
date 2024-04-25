@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> <%= recipeApp %> </h1>
+  <form id="recipe-form">
+    <input type="text" name="title" placeholder="Recipe Title" required>
+    <textarea name="content" placeholder="Ingredients and Instructions" required><%  %></textarea>
+    <button type="submit">Add Recipe</button>
+  </form>
+  <h2>Recipes</h2>
+  <ul id="recipes-list"><%= content %></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
